@@ -116,7 +116,7 @@ noremap <Space>h ^
 "行末移動
 noremap <Space>l $
 "カーソル下のシンボルをリネーム
-nnoremap <Space>r *N:%s//
+nnoremap <Space>r <Cmd>call VSCodeNotify('editor.action.rename')<CR>
 
 "行番号移動
 nnoremap <Space><Enter> G
