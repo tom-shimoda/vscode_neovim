@@ -4,7 +4,7 @@ endif
 
 " ----- dein.vim -----
 " dein.vimインストール時に指定したディレクトリをセット
-let s:dein_dir = expand('~/.cache_vscode/dein')
+let s:dein_dir = expand('C:/.cache_vscode/dein')
 
 " dein.vimの実体があるディレクトリをセット
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -21,8 +21,7 @@ if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
 
     " dein.toml, dein_layz.tomlファイルのディレクトリをセット
-    "let s:toml_dir = expand('~/.config/nvim')
-    let s:toml_dir = expand('~/vscode_neovim/')
+    let s:toml_dir = expand('C:/vscode_neovim/')
 
     " 起動時に読み込むプラグイン群
     call dein#load_toml(s:toml_dir . 'dein.toml', {'lazy': 0})
