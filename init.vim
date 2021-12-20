@@ -102,7 +102,7 @@ let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = 'C:\Users\t.shimoda\AppData\Local\Programs\Python\Python38-32\python'
 
 "vimrcの再読込
-nnoremap <Space>g :source ~/vscode_neovim<CR>
+nnoremap <Space>g :source C:/vscode_neovim<CR>
 "space割り当て解除 (誤爆を防ぐため)
 nnoremap <Space> <Nop>
 "3行飛び上下移動
@@ -148,5 +148,6 @@ nnoremap == <Cmd>call VSCodeNotify('editor.action.formatDocument')<CR>
 nnoremap ghh <Cmd>call VSCodeNotify('editor.action.showHover')<CR>
 nnoremap ghn <Cmd>call VSCodeNotify('workbench.action.editor.nextChange')<CR>
 nnoremap ghb <Cmd>call VSCodeNotify('workbench.action.editor.previousChange')<CR>
+nnoremap ghu <Cmd>call VSCodeNotify('git.revertSelectedRanges')<CR>
 nnoremap gan <Cmd>call VSCodeNotify('editor.action.marker.nextInFiles')<CR>
 
