@@ -140,6 +140,9 @@ nnoremap <F1> :noh<cr>
 "タブ移動
 nmap <S-h> gT
 nmap <S-l> gt
+"行コピー
+nnoremap <S-y> yy
+
 "定義へ移動
 nnoremap gd <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
 "参照先一覧表示
