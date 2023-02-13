@@ -105,9 +105,6 @@ let g:python3_host_prog = 'C:\Users\t.shimoda\AppData\Local\Programs\Python\Pyth
 nnoremap <Space>g :source C:/vscode_neovim<CR>
 "space割り当て解除 (誤爆を防ぐため)
 nnoremap <Space> <Nop>
-"Foldが開いてしまうのでj,kを再マッピング
-nmap j gj
-nmap k gk
 "3行飛び上下移動
 map <S-j> jjj
 map <S-k> jjj
